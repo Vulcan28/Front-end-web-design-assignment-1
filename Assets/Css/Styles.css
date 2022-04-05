@@ -1,27 +1,29 @@
 .wrapper {
     /* First define the column count  */
     display: grid;
+    height: 100vh;
     grid-template-columns: repeat(12, 1fr);
     /* 2nd, define rows  */
-    grid-auto-rows: minmax(100px,auto);
+    grid-template-rows: auto 1fr auto;
     /* column gap  */
     grid-column-gap: 2rem;
 
     grid-template-areas: 
-        "ln ln ln ln l l l l rn rn rn rn"
+        "ln ln ln ln ln l l rn rn rn rn rn"
         "m m m m m m m m m m m m"
         "f f f f f f f f f f f f";
 }
 
 .leftnav {
     /* create named grid area  */
-    grid-area: ln;
+    grid-area: ln;  
 }
 .rightnav{
     grid-area: rn;
 }
 .main{
     grid-area: m;
+        ;
 }  
 .footer{
     grid-area: f;  
@@ -30,28 +32,34 @@
     grid-area: l;
 }
 
-
-
- .navbar{
-
+.IndexImageOne{
+    grid-area: II1;
     
+
+
+}
+
+.IndexTextOne{
+    grid-area: IT1;
+    
+
+}
+
+.navbar img{
+    max-width: 100%;
+    height: auto;
 } 
 
 
 .navbar ul{
     list-style-type: none;
     margin: 10px;
-    padding: 20px;
     overflow: hidden;
     
     
 }
-/*Centering logo  in the middle of the page*/
-.navbar li.logo{
-    background-color: brown;
-    
-    
-}
+
+
 .leftnav li{ 
     float: right;
     padding: 30px;   
@@ -66,7 +74,6 @@
     text-decoration: none;
     font-family: 'Sansita Swashed', cursive;
     display: block;
-    
     }
 
 .navbar li a:link {
@@ -83,27 +90,4 @@
 
 .navbar li a:active {
     color:grey;
-}
-
-.IndexFirstBlock{
-
-    text-align: center;
-    padding: 10px;
-    margin-top: 180px;
-}
-
-.IndexFirstBlock img{
-    float: none;
-    max-width: 100%;
-    padding: 10px;
-    
-
-}
-
-.IndexFirstBlockText{
-    float: left;
-    display: block;
-    max-width: 600px;
-    min-width: 400px;
-
-}
+}   
