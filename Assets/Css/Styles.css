@@ -1,87 +1,84 @@
+
+
 .wrapper {
     /* First define the column count  */
     display: grid;
-    height: 100vh;
+
     grid-template-columns: repeat(12, 1fr);
+
     /* 2nd, define rows  */
-    grid-template-rows: auto 1fr auto;
+    grid-auto-rows: minmax(100px, auto);
+
     /* column gap  */
     grid-column-gap: 2rem;
 
+
     grid-template-areas: 
-        "ln ln ln ln ln l l rn rn rn rn rn"
+    "ln ln ln ln l l l l rn rn rn rn"
         "m m m m m m m m m m m m"
         "f f f f f f f f f f f f";
 }
 
 .leftnav {
     /* create named grid area  */
-    grid-area: ln;  
+    grid-area: ln;
 }
-.rightnav{
+
+.logo {
+    grid-area: l;
+    display: grid;
+    place-items: center;
+}
+
+.rightnav {
     grid-area: rn;
 }
-.main{
+
+.main {
     grid-area: m;
-        ;
-}  
-.footer{
-    grid-area: f;  
-}
-.logo{
-    grid-area: l;
-}
-
-.IndexImageOne{
-    grid-area: II1;
     
-
-
 }
 
-.IndexTextOne{
-    grid-area: IT1;
-    
-
+.footer {
+    grid-area: f;
 }
 
-.navbar img{
+.logo img{
     max-width: 100%;
     height: auto;
-} 
+}
 
-
-.navbar ul{
+.navbar ul {
     list-style-type: none;
-    margin: 10px;
+    margin: 5px;
+    padding: 10px;
     overflow: hidden;
-    
-    
 }
 
 
-.leftnav li{ 
+.leftnav li {
     float: right;
-    padding: 30px;   
+    padding: 10px;
 }
 
-.rightnav li{
+.rightnav li {
     float: left;
-    padding: 30px; 
+    padding: 10px;
 }
 
 .navbar li a {
     text-decoration: none;
     font-family: 'Sansita Swashed', cursive;
     display: block;
-    }
+
+}
 
 .navbar li a:link {
-    color:black;
+    color: black;
 }
 
 .navbar li a:visited {
-    color:black;
+    color: black;
 }
 
 .navbar li a:hover {
@@ -89,5 +86,83 @@
 }
 
 .navbar li a:active {
-    color:grey;
-}   
+    color: grey;
+}
+
+.indexmain{
+    display: grid;
+
+    /*    grid-template-columns: 2;*/
+    grid-template-columns: repeat(12, 1fr);
+    
+    /* column gap  */
+    grid-column-gap: 2rem;
+
+    grid-template-areas:
+        " it1 it1 it1 it1 it1 it1 ii1 ii1 ii1 ii1 ii1 ii1"
+        " ii2 ii2 ii2 ii2 ii2 ii2 it2 it2 it2 it2 it2 it2"
+        " ii2 ii2 ii2 ii2 ii2 ii2 . . . . . ."
+        " ii3 ii3 ii3 ii4 ii4 ii4 ii5 ii5 ii5 ii6 ii6 ii6"
+        " ii7 ii7 ii7 it3 it3 it3 it3 it3 it3 ii8 ii8 ii8"
+        " ii9 ii9 ii9 ii10 ii10 ii10 ii11 ii11 ii11 ii12 ii12 ii12"
+;
+}
+
+.indextext1 {
+    grid-area: it1;
+    
+}
+
+.indeximage1 {
+    grid-area: ii1;
+    
+}
+
+.indeximage1 img{
+    max-width: 100%;
+    height: 100%;
+}
+
+.indeximage2 {
+    grid-area: ii2;
+    display: grid;
+    place-items: center;
+
+}
+
+.indextext2 {
+    grid-area: it2;
+}
+.indeximage3{
+    grid-area: ii3;
+}
+.indeximage4{
+    grid-area: ii4;
+}
+.indeximage5{
+    grid-area: ii5;
+}
+.indeximage6{
+    grid-area: ii6;
+}
+.indeximage7{
+    grid-area: ii7;
+}
+.indeximage8{
+    grid-area: ii8;
+}
+.indeximage9{
+    grid-area: ii9;
+}
+.indeximage10{
+    grid-area: ii10;
+}
+.indeximage11{
+    grid-area: ii11;
+}
+.indeximage12{
+    grid-area: ii12;
+}
+.indextext3{
+    grid-area: it3;
+}
