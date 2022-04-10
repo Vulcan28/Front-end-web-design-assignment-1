@@ -1,4 +1,6 @@
-
+body{
+    background-image:url('../../assets/background.png');
+}
 
 .wrapper {
     /* First define the column count  */
@@ -11,6 +13,8 @@
 
     /* column gap  */
     grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+    
 
 
     grid-template-areas: 
@@ -41,6 +45,30 @@
 
 .footer {
     grid-area: f;
+}
+
+
+.main h1 {
+    font-size: 2rem;
+    font-family: 'Fredoka One', cursive;
+    text-align: center;
+}
+
+.main p {
+    font-size: 1.1rem;
+    font-family: 'Titillium Web', sans-serif;
+    text-align: center;
+}
+footer h1{
+    font-size: 1rem;
+    font-family: 'Fredoka One', cursive;
+    text-align: center;
+}
+
+footer p{
+    font-size: 1rem;
+    font-family: 'Titillium Web', sans-serif;
+    text-align: center;
 }
 
 .logo img{
@@ -98,13 +126,15 @@
     /* column gap  */
     grid-column-gap: 2rem;
 
+    row-gap: 1rem;
+
     grid-template-areas:
         " it1 it1 it1 it1 it1 it1 ii1 ii1 ii1 ii1 ii1 ii1"
         " ii2 ii2 ii2 ii2 ii2 ii2 it2 it2 it2 it2 it2 it2"
-        " ii2 ii2 ii2 ii2 ii2 ii2 . . . . . ."
-        " ii3 ii3 ii3 ii4 ii4 ii4 ii5 ii5 ii5 ii6 ii6 ii6"
-        " ii7 ii7 ii7 it3 it3 it3 it3 it3 it3 ii8 ii8 ii8"
-        " ii9 ii9 ii9 ii10 ii10 ii10 ii11 ii11 ii11 ii12 ii12 ii12"
+        " ii2 ii2 ii2 ii2 ii2 ii2 so so so so so so"
+        " . . . ii3 ii3 ii4 ii5 ii6 ii6 . . ."
+        " . . . ii7 ii7 it3 it3 ii8 ii8 . . ."
+        " . . . ii9 ii9 ii10 ii11 ii12 ii12 . . ."
 ;
 }
 
@@ -132,37 +162,148 @@
 
 .indextext2 {
     grid-area: it2;
+    display: grid;
+    place-items: center;
 }
+.socials{
+    grid-area: so;
+    display: grid;
+    grid-template-columns:repeat(3, 1fr) ;
+    grid-template-rows: 1, 1fr;
+    place-items: center;
+
+}
+
+.fa{
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 2rem;
+}
+
+.fa:hover {
+    opacity: 0.7;
+    
+  }
+
+  /* Facebook */
+.fa-facebook {
+    background: dimgray;
+    color: white;
+  }
+  
+  /* Twitter */
+  .fa-twitter {
+    background: dimgray;
+    color: white;
+  }
+
+  /* instagram */
+  .fa-instagram {
+    background: dimgray;
+    color: white;
+  }
+
 .indeximage3{
     grid-area: ii3;
+    display: grid;
+    place-items: center;
 }
 .indeximage4{
     grid-area: ii4;
+    display: grid;
+    place-items: center;
 }
 .indeximage5{
     grid-area: ii5;
+    display: grid;
+    place-items: center;
 }
 .indeximage6{
     grid-area: ii6;
+    display: grid;
+    place-items: center;
 }
 .indeximage7{
     grid-area: ii7;
+    display: grid;
+    place-items: center;
 }
 .indeximage8{
     grid-area: ii8;
+    display: grid;
+    place-items: center;
 }
 .indeximage9{
     grid-area: ii9;
+    display: grid;
+    place-items: center;
 }
 .indeximage10{
     grid-area: ii10;
+    display: grid;
+    place-items: center;
 }
 .indeximage11{
     grid-area: ii11;
+    display: grid;
+    place-items: center;
 }
 .indeximage12{
     grid-area: ii12;
+    display: grid;
+    place-items: center;
 }
 .indextext3{
     grid-area: it3;
+    display: grid;
+    place-items: center;    
+}
+
+
+.covid19main {
+    display: grid;
+
+    /*    grid-template-columns: 2;*/
+    grid-template-columns: repeat(12, 1fr);
+    
+    /* column gap  */
+    grid-column-gap: 2rem;
+
+    row-gap: 1rem;
+
+    grid-template-areas:
+    ". c19t1 c19t1 c19t1 c19t1 c19t1 c19t1 c19t1 c19t1 c19t1 c19t1 ."
+    "c19i2 c19i2 c19i2 c19i2 c19i2 c19i2 c19i1 c19i1 c19i1 c19i1 c19i1 c19i1"
+
+    ;
+}
+
+.covid19text1{
+    grid-area: c19t1;
+
+} 
+
+.covid19text1 p{
+    text-align: left;
+}
+
+.covid19text1 li{
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1.1rem ;
+    list-style: square;
+}
+
+.covid19image1{
+    grid-area: c19i1;
+    display: inline;
+
+}
+
+.covid19image2{
+    grid-area: c19i2;
+    display: inline;
+
 }
