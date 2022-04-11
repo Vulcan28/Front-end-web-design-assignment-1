@@ -53,9 +53,26 @@ body{
     font-family: 'Fredoka One', cursive;
     text-align: center;
 }
+.main h2 {
+    font-size: 1.5rem;
+    font-family: 'Fredoka One', cursive;
+    text-align: center;
+}
 
 .main p {
     font-size: 1.1rem;
+    font-family: 'Titillium Web', sans-serif;
+    text-align: center;
+}
+
+.main p2 {
+    font-size: 1rem;
+    font-family: 'Titillium Web', sans-serif;
+    text-align: center;
+}
+
+.main p3 {
+    font-size: 1rem;
     font-family: 'Titillium Web', sans-serif;
     text-align: center;
 }
@@ -306,4 +323,223 @@ footer p{
     grid-area: c19i2;
     display: inline;
 
+}
+
+.newsmain {
+    display: grid;
+
+    /*    grid-template-columns: 2;*/
+    grid-template-columns: repeat(12, 1fr);
+    
+    /* column gap  */
+    grid-column-gap: 2rem;
+
+    row-gap: 2rem;
+
+    grid-template-areas:
+    "nt1 nt1 nt1 nt1 nt1 nt1 nt2 nt2 nt2 nt2 nt2 nt2"
+    "nt3 nt3 nt3 nt3 nt3 nt3 nt4 nt4 nt4 nt4 nt4 nt4"
+    "nt5 nt5 nt5 nt5 nt5 nt5 nt6 nt6 nt6 nt6 nt6 nt6"
+}
+
+.newsitem1{
+    grid-area: nt1;
+    display: grid;
+    place-items: center;
+
+}
+.newsitem2{
+    grid-area: nt2;
+    display: grid;
+    place-items: center;
+
+}
+.newsitem3{
+    grid-area: nt3;
+    display: grid;
+    place-items: center;
+
+}
+.newsitem4{
+    grid-area: nt4;
+    display: grid;
+    place-items: center;
+
+}
+.newsitem5{
+    grid-area: nt5;
+    display: grid;
+    place-items: center;
+
+}
+.newsitem6{
+    grid-area: nt6;
+    display: grid;
+    place-items: center;
+
+}
+
+.festivalsmain {
+    display: grid;
+
+    /*    grid-template-columns: 2;*/
+    grid-template-columns: repeat(12, 1fr);
+    
+    /* column gap  */
+    grid-column-gap: 2rem;
+
+    row-gap: 2rem;
+
+    grid-template-areas:
+    "ft ft ft ft ft ft ft fi fi fi fi fi"
+    ;
+}
+
+.festivalstext{
+    grid-area: ft;
+    display: grid;
+    place-items: center;
+}
+
+.festivalslogo{
+    grid-area: fi;
+    display: grid;
+    
+}
+
+.citycommissionsmain{
+    display: grid;
+
+    /*    grid-template-columns: 2;*/
+    grid-template-columns: repeat(12, 1fr);
+    
+    /* column gap  */
+    grid-column-gap: 2rem;
+
+    row-gap: 2rem;
+    grid-template-areas:
+    "cci cci cci cci cci cci cct cct cct cct cct cct" 
+    ;
+}
+
+.citycommissionstext{
+    grid-area: cct;
+}
+
+.citycommissionsimage{
+    grid-area: cci;
+}
+
+.supportersmain{
+    display: grid;
+
+    /*    grid-template-columns: 2;*/
+    grid-template-columns: repeat(12, 1fr);
+    
+    /* column gap  */
+    grid-column-gap: 2rem;
+
+    row-gap: 2rem;
+    grid-template-areas:
+    "st1 st1 st1 st1 st1 st1 st2 st2 st2 st2 st2 st2"
+    "st1 st1 st1 st1 st1 st1 st3 st3 st3 st3 st3 st3"    
+    ;
+}
+
+.supporterstext1{
+    grid-area: st1;
+}
+.supporterstext2{
+    grid-area: st2;
+}
+
+.supporterstext3{
+    grid-area: st3;
+    display: grid;
+
+    grid-template-columns: 2;
+
+    grid-column-gap: 2rem;
+
+    row-gap: 2rem;
+
+    grid-template-areas: 
+    "r1 r2"
+    ;
+}
+
+.row1{
+    grid-area: r1;
+}
+.row2{
+    grid-area: r2;
+}
+
+.peoplemain {
+    display: grid;
+
+    /*    grid-template-columns: 2;*/
+    grid-template-columns: repeat(12, 1fr);
+    
+    /* column gap  */
+    grid-column-gap: 2rem;
+
+    row-gap: 3rem;
+
+    grid-template-areas:
+    "pt pt pt pt pt pt pt pt pt pt pt pt"
+    "p1 p1 p1 p1 p1 p1 p2 p2 p2 p2 p2 p2"
+    "p3 p3 p3 p3 p3 p3 p4 p4 p4 p4 p4 p4"
+    "p5 p5 p5 p5 p5 p5 p6 p6 p6 p6 p6 p6"
+    "p7 p7 p7 p7 p7 p7 p8 p8 p8 p8 p8 p8"
+
+}
+
+.peopletext{
+    grid-area: pt;
+    display: grid;
+    place-items: center;
+}
+
+.person1 {
+    grid-area: p1;
+    display: grid;
+    place-items: center;
+    
+}
+.person2 {
+    grid-area: p2;
+    display: grid;
+    place-items: center;
+    
+}
+.person3 {
+    grid-area: p3;
+    display: grid;
+    place-items: center;
+}
+.person4 {
+    grid-area: p4;
+    display: grid;
+    place-items: center;
+}
+.person5 {
+    grid-area: p5;
+    display: grid;
+    place-items: center;
+}
+.person6 {
+    grid-area: p6;
+    display: grid;
+    place-items: center;
+}
+.person7 {
+    grid-area: p7;
+    display: grid;
+    place-items: center;
+}
+.person8 {
+    grid-area: p8;
+    display: grid;
+    place-items: center;
 }
