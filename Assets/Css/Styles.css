@@ -149,26 +149,24 @@ footer p{
         " it1 it1 it1 it1 it1 it1 ii1 ii1 ii1 ii1 ii1 ii1"
         " ii2 ii2 ii2 ii2 ii2 ii2 it2 it2 it2 it2 it2 it2"
         " ii2 ii2 ii2 ii2 ii2 ii2 so so so so so so"
-        " . . . ii3 ii3 ii4 ii5 ii6 ii6 . . ."
-        " . . . ii7 ii7 it3 it3 ii8 ii8 . . ."
-        " . . . ii9 ii9 ii10 ii11 ii12 ii12 . . ."
+        " . . ii3 ii3 ii4 ii4 ii5 ii5 ii6 ii6 ii6 ."
+        " . . ii7 ii7 it3 it3 it3 it3 ii8 ii8 ii8 ."
+        " . . ii9 ii9 ii10 ii10 ii11 ii11 ii12 ii12 ii12 ."
 ;
 }
 
 .indextext1 {
     grid-area: it1;
-    
+    display: grid;
+    place-items: center;
 }
 
 .indeximage1 {
-    grid-area: ii1;
-    
+    grid-area: ii1; 
+    display: grid;
+    place-items: center;
 }
 
-.indeximage1 img{
-    max-width: 100%;
-    height: 100%;
-}
 
 .indeximage2 {
     grid-area: ii2;
@@ -226,57 +224,56 @@ footer p{
 .indeximage3{
     grid-area: ii3;
     display: grid;
-    place-items: center;
 }
 .indeximage4{
     grid-area: ii4;
     display: grid;
-    place-items: center;
+    
 }
 .indeximage5{
     grid-area: ii5;
     display: grid;
-    place-items: center;
+    
 }
 .indeximage6{
     grid-area: ii6;
     display: grid;
-    place-items: center;
+    
 }
 .indeximage7{
     grid-area: ii7;
     display: grid;
-    place-items: center;
+    
 }
 .indeximage8{
     grid-area: ii8;
     display: grid;
-    place-items: center;
+    
 }
 .indeximage9{
     grid-area: ii9;
     display: grid;
-    place-items: center;
+    
 }
 .indeximage10{
     grid-area: ii10;
     display: grid;
-    place-items: center;
+    
 }
 .indeximage11{
     grid-area: ii11;
     display: grid;
-    place-items: center;
+    
 }
 .indeximage12{
     grid-area: ii12;
     display: grid;
-    place-items: center;
+    
 }
 .indextext3{
     grid-area: it3;
     display: grid;
-    place-items: center;    
+    place-items: center;
 }
 
 
@@ -316,14 +313,15 @@ footer p{
 .covid19image1{
     grid-area: c19i1;
     display: inline;
-
 }
+    
 
 .covid19image2{
     grid-area: c19i2;
     display: inline;
 
 }
+
 
 .newsmain {
     display: grid;
@@ -391,7 +389,8 @@ footer p{
     row-gap: 2rem;
 
     grid-template-areas:
-    "ft ft ft ft ft ft ft fi fi fi fi fi"
+    "fi fi fi fi fi ft ft ft ft ft ft ft "
+    ". . . . . ft ft ft ft ft ft ft"
     ;
 }
 
@@ -404,6 +403,7 @@ footer p{
 .festivalslogo{
     grid-area: fi;
     display: grid;
+    place-items: center;
     
 }
 
@@ -419,15 +419,20 @@ footer p{
     row-gap: 2rem;
     grid-template-areas:
     "cci cci cci cci cci cci cct cct cct cct cct cct" 
+    ". . . . . . cct cct cct cct cct cct"
     ;
 }
 
 .citycommissionstext{
     grid-area: cct;
+    display: grid;
+    place-items: center;
 }
 
 .citycommissionsimage{
     grid-area: cci;
+    display: grid;
+    place-items: center;
 }
 
 .supportersmain{
@@ -492,6 +497,7 @@ footer p{
     "p3 p3 p3 p3 p3 p3 p4 p4 p4 p4 p4 p4"
     "p5 p5 p5 p5 p5 p5 p6 p6 p6 p6 p6 p6"
     "p7 p7 p7 p7 p7 p7 p8 p8 p8 p8 p8 p8"
+    ;
 
 }
 
@@ -542,4 +548,214 @@ footer p{
     grid-area: p8;
     display: grid;
     place-items: center;
+}
+
+
+
+
+
+ @media (max-width:73.125rem) {
+    .indexmain{    
+        display: grid;
+   
+       /*    grid-template-columns: 2;*/
+       grid-template-columns: repeat(12, 1fr);
+       
+       /* column gap  */
+       grid-column-gap: 2rem;
+   
+       row-gap: 3rem;
+       grid-template-areas:
+       " it1 it1 it1 it1 it1 it1 ii1 ii1 ii1 ii1 ii1 ii1"
+       " ii2 ii2 ii2 ii2 ii2 ii2 it2 it2 it2 it2 it2 it2"
+        " ii2 ii2 ii2 ii2 ii2 ii2 so so so so so so"
+        ". . . . it3 it3 it3 it3 . . . ."
+       ". . . . ii6 ii6 ii6 ii6 . . . ."
+       "ii3 ii3 ii3 ii3 ii4 ii4 ii4 ii4 ii5 ii5 ii5 ii5"
+       "ii7 ii7 ii7 ii7 ii12 ii12 ii12 ii12 ii8 ii8 ii8 ii8"
+       "ii9 ii9 ii9 ii9 ii10 ii10 ii10 ii10 ii11 ii11 ii11 ii11"
+       ;
+   
+    }
+
+    
+
+} 
+
+
+@media (max-width:62.5rem) {
+    .indexmain{    
+        display: grid;
+   
+       /*    grid-template-columns: 2;*/
+       grid-template-columns: repeat(12, 1fr);
+       
+       /* column gap  */
+       grid-column-gap: 2rem;
+   
+       row-gap: 3rem;
+       grid-template-areas:
+       "ii1 ii1 ii1 ii1 ii1 ii1 ii1 ii1 ii1 ii1 ii1 ii1"
+       " it1 it1 it1 it1 it1 it1 it1 it1 it1 it1 it1 it1"
+       " ii2 ii2 ii2 ii2 ii2 ii2 ii2 ii2 ii2 ii2 ii2 ii2"
+       "so so so so so so so so so so so so"
+        " it2 it2 it2 it2 it2 it2 it2 it2 it2 it2 it2 it2"
+        ". . . . it3 it3 it3 it3 . . . ."
+       ". . . . ii6 ii6 ii6 ii6 . . . ."
+       "ii3 ii3 ii3 ii3 ii4 ii4 ii4 ii4 ii5 ii5 ii5 ii5"
+       "ii7 ii7 ii7 ii7 ii12 ii12 ii12 ii12 ii8 ii8 ii8 ii8"
+       "ii9 ii9 ii9 ii9 ii10 ii10 ii10 ii10 ii11 ii11 ii11 ii11"
+       ;
+   
+    }
+
+}
+
+
+@media (max-width: 37.25rem) {
+    .indexmain{    
+        display: grid;
+   
+       /*    grid-template-columns: 2;*/
+       grid-template-columns: repeat(12, 1fr);
+       
+       /* column gap  */
+       grid-column-gap: 2rem;
+   
+       row-gap: 3rem;
+       grid-template-areas:
+       "ii1 ii1 ii1 ii1 ii1 ii1 ii1 ii1 ii1 ii1 ii1 ii1"
+       " it1 it1 it1 it1 it1 it1 it1 it1 it1 it1 it1 it1"
+       " ii2 ii2 ii2 ii2 ii2 ii2 ii2 ii2 ii2 ii2 ii2 ii2"
+       "so so so so so so so so so so so so"
+        " it2 it2 it2 it2 it2 it2 it2 it2 it2 it2 it2 it2"
+        ". . . . it3 it3 it3 it3 . . . ."
+        "ii3 ii3 ii3 ii3 ii3 ii3 ii6 ii6 ii6 ii6 ii6 ii6"
+        "ii9 ii9 ii9 ii9 ii9 ii9 ii4 ii4 ii4 ii4 ii4 ii4"
+        "ii8 ii8 ii8 ii8 ii8 ii8 ii5 ii5 ii5 ii5 ii5 ii5"
+        "ii7 ii7 ii7 ii7 ii7 ii7 ii12 ii12 ii12 ii12 ii12 ii12"
+        "ii10 ii10 ii10 ii10 ii10 ii10 ii11 ii11 ii11 ii11 ii11 ii11"
+       ;
+   
+    }
+
+}
+
+@media (max-width: 62.125rem) {
+    .newsmain {
+        display: grid;
+    
+        /*    grid-template-columns: 2;* 
+        grid-template-columns: repeat(12, 1fr);
+        
+        /* column gap  */
+        grid-column-gap: 2rem;
+    
+        row-gap: 2rem;
+    
+        grid-template-areas:
+        "nt1 nt1 nt1 nt1 nt1 nt1 nt1 nt1 nt1 nt1 nt1 nt1"
+        "nt2 nt2 nt2 nt2 nt2 nt2 nt2 nt2 nt2 nt2 nt2 nt2"
+        "nt3 nt3 nt3 nt3 nt3 nt3 nt3 nt3 nt3 nt3 nt3 nt3"
+        "nt4 nt4 nt4 nt4 nt4 nt4 nt4 nt4 nt4 nt4 nt4 nt4"
+        "nt5 nt5 nt5 nt5 nt5 nt5 nt5 nt5 nt5 nt5 nt5 nt5"
+        "nt6 nt6 nt6 nt6 nt6 nt6 nt6 nt6 nt6 nt6 nt6 nt6"
+    }
+
+
+}
+
+@media (max-width:85.25rem) {
+    .festivalsmain {
+        display: grid;
+    
+        /*    grid-template-columns: 2;*/
+        grid-template-columns: repeat(12, 1fr);
+        
+        /* column gap  */
+        grid-column-gap: 2rem;
+    
+        row-gap: 2rem;
+    
+        grid-template-areas:
+        "fi fi fi fi fi fi fi fi fi fi fi fi"
+        "ft ft ft ft ft ft ft ft ft ft ft ft"
+        ;
+
+    }
+
+
+    .citycommissionsmain{
+        display: grid;
+    
+        /*    grid-template-columns: 2;*/
+        grid-template-columns: repeat(12, 1fr);
+        
+        /* column gap  */
+        grid-column-gap: 2rem;
+    
+        row-gap: 2rem;
+        grid-template-areas:
+        "cci cci cci cci cci cci cci cci cci cci cci cci"
+        "cct cct cct cct cct cct cct cct cct cct cct cct" 
+        ;
+    }
+
+
+}
+
+
+
+
+@media (max-width:48rem) {
+
+    .supportersmain{
+        display: grid;
+    
+        /*    grid-template-columns: 2;*/
+        grid-template-columns: repeat(12, 1fr);
+        
+        /* column gap  */
+        grid-column-gap: 2rem;
+    
+        row-gap: 2rem;
+        grid-template-areas:
+        "st1 st1 st1 st1 st1 st1 st1 st1 st1 st1 st1 st1    "
+        "st2 st2 st2 st2 st2 st2 st2 st2 st2 st2 st2 st2"
+        "st3 st3 st3 st3 st3 st3 st3 st3 st3 st3 st3 st3"    
+        ;
+    }
+
+
+}
+
+
+@media (max-width:61.875rem) {
+
+    .peoplemain {
+        display: grid;
+    
+        /*    grid-template-columns: 2;*/
+        grid-template-columns: repeat(12, 1fr);
+        
+        /* column gap  */
+        grid-column-gap: 2rem;
+    
+        row-gap: 3rem;
+    
+        grid-template-areas:
+        "pt pt pt pt pt pt pt pt pt pt pt pt"
+        "p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1 p1"
+        "p2 p2 p2 p2 p2 p2 p2 p2 p2 p2 p2 p2"
+        "p3 p3 p3 p3 p3 p3 p3 p3 p3 p3 p3 p3"
+        "p4 p4 p4 p4 p4 p4 p4 p4 p4 p4 p4 p4"
+        "p5 p5 p5 p5 p5 p5 p5 p5 p5 p5 p5 p5"
+        "p6 p6 p6 p6 p6 p6 p6 p6 p6 p6 p6 p6"
+        "p7 p7 p7 p7 p7 p7 p7 p7 p7 p7 p7 p7"
+        "p8 p8 p8 p8 p8 p8 p8 p8 p8 p8 p8 p8"
+        ;
+    
+    }
+
+
 }
