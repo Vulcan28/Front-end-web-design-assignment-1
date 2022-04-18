@@ -107,7 +107,7 @@ footer p{
 
 .leftnav li {
     float: right;
-    padding: 10px;
+    padding: 10px;  
 }
 
 .rightnav li {
@@ -318,6 +318,7 @@ footer p{
     font-family: 'Titillium Web', sans-serif;
     font-size: 1.1rem ;
     list-style: square;
+    margin-left: 10px ;
 }
 
 .covid19image1{
@@ -354,36 +355,48 @@ footer p{
     grid-area: nt1;
     display: grid;
     place-items: center;
+    border-radius: 25px;
+    background-image:url('../../assets/paper.jpg');
 
 }
 .newsitem2{
     grid-area: nt2;
     display: grid;
     place-items: center;
+    border-radius: 25px;
+    background-image:url('../../assets/paper.jpg');
 
 }
 .newsitem3{
     grid-area: nt3;
     display: grid;
     place-items: center;
+    border-radius: 25px;
+    background-image:url('../../assets/paper.jpg');
 
 }
 .newsitem4{
     grid-area: nt4;
     display: grid;
     place-items: center;
+    border-radius: 25px;
+    background-image:url('../../assets/paper.jpg');
 
 }
 .newsitem5{
     grid-area: nt5;
     display: grid;
     place-items: center;
+    border-radius: 25px;
+    background-image:url('../../assets/paper.jpg');
 
 }
 .newsitem6{
     grid-area: nt6;
     display: grid;
     place-items: center;
+    border-radius: 25px;
+    background-image:url('../../assets/paper.jpg');
 
 }
 
@@ -525,43 +538,59 @@ footer p{
     grid-area: p1;
     display: grid;
     place-items: center;
+    border-radius: 25px;
+    background-image:url('../../assets/paper.jpg');
     
 }
 .person2 {
     grid-area: p2;
     display: grid;
     place-items: center;
+    border-radius: 25px;
+    background-image:url('../../assets/paper.jpg');
     
 }
 .person3 {
     grid-area: p3;
     display: grid;
     place-items: center;
+    border-radius: 25px;
+    background-image:url('../../assets/paper.jpg');
 }
 .person4 {
     grid-area: p4;
     display: grid;
     place-items: center;
+    border-radius: 25px;
+    background-image:url('../../assets/paper.jpg');
 }
 .person5 {
     grid-area: p5;
     display: grid;
     place-items: center;
+    border-radius: 25px;
+    background-image:url('../../assets/paper.jpg');
 }
 .person6 {
     grid-area: p6;
     display: grid;
     place-items: center;
+    border-radius: 25px;
+    background-image:url('../../assets/paper.jpg');
 }
 .person7 {
     grid-area: p7;
     display: grid;
     place-items: center;
+    border-radius: 25px;
+    background-image:url('../../assets/paper.jpg');
 }
 .person8 {
     grid-area: p8;
     display: grid;
     place-items: center;
+    border-radius: 25px;
+    background-image:url('../../assets/paper.jpg');
 }
 
 
@@ -634,7 +663,7 @@ footer p{
        
        /* column gap  */
        grid-column-gap: 2rem;
-   /* row gap */
+       /* row gap */
        row-gap: 3rem;
        /* define areas for elements */
        grid-template-areas:
@@ -771,4 +800,48 @@ footer p{
     }
 
 
+}
+
+@media (max-width:93.125rem){
+    .covid19image1{
+        grid-area: c19i1;
+        display: grid;
+        place-items: center;
+    }
+        
+    
+    .covid19image2{
+        grid-area: c19i2;
+        display: grid;
+        place-items: center;
+    
+    }
+
+
+
+}
+
+@media (max-width:76rem){
+
+    .wrapper {
+        /* First define the column count  */
+        display: grid;
+    
+        /* define columns */
+        grid-template-columns: repeat(12, 1fr);
+    
+        /* 2nd, define rows  */
+        grid-auto-rows: minmax(100px, auto);
+    
+        /* column gap  */
+        grid-column-gap: 2rem;
+        /* row gap */
+        grid-row-gap: 0.01rem;
+    /* define areas for elements */
+        grid-template-areas: 
+        "l l l l l l l l l l l l"
+        "ln ln ln ln ln ln rn rn rn rn rn rn"
+        "m m m m m m m m m m m m"
+        "f f f f f f f f f f f f";
+    }
 }
